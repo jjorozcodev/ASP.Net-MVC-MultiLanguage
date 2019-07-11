@@ -14,11 +14,13 @@ namespace ASP_Net_MVC_MultiLanguage_Example.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult Index(Registration r)
         {
             return View(r);
         }
+
         public ActionResult ChangeLanguage(string lang)
         {
             new LanguageMang().SetLanguage(lang);
